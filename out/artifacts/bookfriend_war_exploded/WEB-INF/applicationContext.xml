@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+<!--配置数据-->
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/springtest?characterEncoding=utf8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+        <property name="maxTotal" value="30"/>
+        <property name="maxIdle" value="10"/>
+        <property name="initialSize" value="5"/>
+    </bean>
+<!--   添加事务支持-->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+<!--    开启事务注解-->
+    <tx:annotation-driven transaction-manager="txManager"/>
+<!--    配置MyBatis工厂，同时指定数据源，并与MyBatis整合-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+<!--        MyBatis核心配置文件-->
+        <property name="configLocation" value="classpath:com/woohsi/bookfriend/mybatis/mybatis-config.xml"/>
+    </bean>
+<!--    Mapper代理开发，使用Spring自动扫描MyBatis的接口并装配-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+<!--        使用MyBatis-Spring组件扫描-->
+        <property name="basePackage" value="com.woohsi.bookfriend.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+<!--    指定需要扫描的包-->
+    <context:component-scan base-package="com.woohsi.bookfriend.service"/>
+</beans>
