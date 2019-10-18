@@ -19,11 +19,18 @@ public class BookServiceImpl implements BookService{
     @Override
     public String saveBook(Book book) {
         if (bookDao.saveBook(book) > 0) {
-            return "bookList";
+            return "redirect:/book/list";
         }
         return null;
     }
 
+    @Override
+    public String deleteBook(Integer bkid) {
+        if (bookDao.deleteBook(bkid) > 0) {
+            return "redirect:/book/list";
+        }
+        return null;
+    }
 
     @Override
     public String listBook(Model model, HttpSession session) {

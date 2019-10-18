@@ -11,6 +11,6 @@ import java.util.List;
 @Mapper
 public interface BookDao {
     public int saveBook(Book book);
-
+    public int deleteBook(Integer bkid);
     List<Book> selectAllBooks(User user);
 }

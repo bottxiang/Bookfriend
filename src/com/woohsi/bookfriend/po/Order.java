@@ -5,7 +5,7 @@ package com.woohsi.bookfriend.po;
  */
 public class Order {
     private Integer oid;//订单编号
-    private Integer bid;//书籍id
+    private Integer bkid;//书籍id
     private Integer buid;//买家id
     private Integer suid;//卖家id
 
@@ -17,12 +17,12 @@ public class Order {
         this.oid = oid;
     }
 
-    public Integer getBid() {
-        return bid;
+    public Integer getBkid() {
+        return bkid;
     }
 
-    public void setBid(Integer bid) {
-        this.bid = bid;
+    public void setBid(Integer bkid) {
+        this.bkid = bkid;
     }
 
     public Integer getBuid() {
