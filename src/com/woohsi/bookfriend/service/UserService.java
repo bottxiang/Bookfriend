@@ -1,9 +1,11 @@
 package com.woohsi.bookfriend.service;
 
-import com.woohsi.bookfriend.po.MyUser;
+import com.woohsi.bookfriend.po.User;
+import org.springframework.ui.Model;
 
-import java.util.List;
+import javax.servlet.http.HttpSession;
 
 public interface UserService {
-    public List<MyUser> selectUserByUname(MyUser user);
+    public String register(User user, Model model, HttpSession session, String code);
+    public String login(User user,Model model, HttpSession session, String code);
 }

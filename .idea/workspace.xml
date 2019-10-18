@@ -6,7 +6,58 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebf2687a-2f94-4502-a2f2-ab7a9947a6d6" name="Default Changelist" comment="" />
+    <list default="true" id="ebf2687a-2f94-4502-a2f2-ab7a9947a6d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/IndexDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/exception/MyExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/exception/NotLoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/BookMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/IndexService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/IndexServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/util/MyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/addBook.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/error/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/my_libs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/my_libs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/po/MyUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/userList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/springmvc-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/po/MyUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/MyUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/bookList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/springmvc-servlet.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +67,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="Jsp File" />
         <option value="Tag Library Descriptor" />
         <option value="spring-beans.schema" />
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -31,10 +86,14 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1SDquELiRndTZaJReo5W4j1oD0g" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HelloSpringMVC" />
+    <property name="last_opened_file_path" value="$USER_HOME$/下载/code-archive/源码--Java EE 框架整合开发从入门到实战/源代码/ch20" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,6 +104,16 @@
     <property name="project.structure.proportion" value="0.19560741" />
     <property name="project.structure.side.proportion" value="0.22098976" />
     <property name="settings.editor.selected.configurable" value="spring" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.woohsi.bookfriend.po" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.woohsi.bookfriend.dao" />
+      <recent name="com.woohsi.bookfriend.service" />
+      <recent name="com.woohsi.bookfriend.exception" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -60,6 +129,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 8.5.45" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.45" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -150,10 +220,29 @@
       <workItem from="1571145963011" duration="1165000" />
       <workItem from="1571147155291" duration="871000" />
       <workItem from="1571149142766" duration="9578000" />
+      <workItem from="1571193520332" duration="9686000" />
+      <workItem from="1571226749135" duration="1296000" />
+      <workItem from="1571238237750" duration="5744000" />
+      <workItem from="1571287804248" duration="11380000" />
+      <workItem from="1571303397668" duration="14232000" />
+      <workItem from="1571368634338" duration="2830000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

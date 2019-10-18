@@ -3,11 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.woohsi.bookfriend.dao.UserDao">
-    <select id="selectUserByUname" resultType="com.woohsi.bookfriend.po.MyUser"
-    parameterType="com.woohsi.bookfriend.po.MyUser">
-        select * from user where 1=1
-        <if test="uname != null and uname != ''">
-            and uname like concat('%',#{uname},'%')
-        </if>
+    <select id="login" resultType="User" parameterType="User">
+        select * from user where email = #{email} and pwd = #{password}
     </select>
+    <insert id="register" parameterType="User">
+        insert into user(uid, email, pwd) values(null, #{email}, #{password})
+    </insert>
 </mapper>

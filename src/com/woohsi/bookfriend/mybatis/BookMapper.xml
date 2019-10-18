@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.woohsi.bookfriend.dao.BookDao">
+
+    <insert id="saveBook" parameterType="Book">
+        insert into book(bkid,bkname,bkprice,bkpress,bkdescription,status,uid)
+        values(null, #{bkname}, #{bkprice}, #{bkpress}, #{bkdescription}, #{status}, #{uid})
+    </insert>
+    <select id="selectAllBooks" parameterType="User" resultType="Book">
+        select * from book where uid=#{uid}
+    </select>
+</mapper>

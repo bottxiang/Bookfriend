@@ -3,8 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <typeAliases>
+        <typeAlias type="com.woohsi.bookfriend.po.User" alias="User" />
+        <typeAlias type="com.woohsi.bookfriend.po.Book" alias="Book" />
+    </typeAliases>
     <mappers>
 <!--        映射器告诉MyBatis到哪里去找映射文件-->
         <mapper resource="com/woohsi/bookfriend/mybatis/UserMapper.xml"/>
+        <mapper resource="com/woohsi/bookfriend/mybatis/BookMapper.xml"/>
     </mappers>
 </configuration>
