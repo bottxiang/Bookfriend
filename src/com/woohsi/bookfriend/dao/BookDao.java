@@ -11,6 +11,8 @@ import java.util.List;
 @Mapper
 public interface BookDao {
     public int saveBook(Book book);
+    public Book queryBook(Integer bkid);
+    public int updateBook(Book book);
     public int deleteBook(Integer bkid);
-    List<Book> selectAllBooks(User user);
+    List<Book> selectAllBooks(Integer uid);
 }

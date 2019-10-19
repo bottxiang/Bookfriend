@@ -2,14 +2,19 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.woohsi.Orderfriend.dao.OrderDao">
+<mapper namespace="com.woohsi.bookfriend.dao.OrderDao">
 
     <insert id="saveOrder" parameterType="map">
-        insert into Order(bkid,bkname,bkprice,bkpress,bkdescription,status,uid)
-        values(null, #{bkname}, #{bkprice}, #{bkpress}, #{bkdescription}, #{status}, #{uid})
+        insert into `order`(oid, bkid, buid, suid)
+        values(null, #{bkid}, #{buid}, #{suid})
     </insert>
-    <select id="selectAllOrders" parameterType="User" resultType="Order">
-        select * from Order where uid=#{uid}
+    <select id="selectAllSellOrders" parameterType="Integer" resultType="map">
+        select `order`.oid, book.bkname, book.bkprice, buser.email
+        from book, `order`, user buser where `order`.bkid=book.bkid and order.buid=buser.uid and `order`.suid=#{uid}
+    </select>
+    <select id="selectAllBuyOrders" parameterType="Integer" resultType="map">
+        select `order`.oid, book.bkname, book.bkprice, suser.email
+        from book, `order`, user suser where `order`.bkid=book.bkid and `order`.suid=suser.uid and `order`.buid=#{uid}
     </select>
     <delete id="deleteOrder" parameterType="Integer">
         delete from Order where bkid=#{bkid}

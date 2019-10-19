@@ -6,10 +6,12 @@
     <typeAliases>
         <typeAlias type="com.woohsi.bookfriend.po.User" alias="User" />
         <typeAlias type="com.woohsi.bookfriend.po.Book" alias="Book" />
+        <typeAlias type="com.woohsi.bookfriend.po.Order" alias="Order" />
     </typeAliases>
     <mappers>
 <!--        映射器告诉MyBatis到哪里去找映射文件-->
         <mapper resource="com/woohsi/bookfriend/mybatis/UserMapper.xml"/>
         <mapper resource="com/woohsi/bookfriend/mybatis/BookMapper.xml"/>
+        <mapper resource="com/woohsi/bookfriend/mybatis/OrderMapper.xml"/>
     </mappers>
 </configuration>

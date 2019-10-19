@@ -22,6 +22,10 @@ public class BookController {
     public String saveBook(@ModelAttribute Book book) {
         return bookService.saveBook(book);
     }
+    @RequestMapping("/query")
+    public String queryBook(Model model, Integer bkid) {
+        return bookService.queryBook(model, bkid);
+    }
     @RequestMapping("/delete")
     public String saveBook(@RequestParam Integer bkid) {
         return bookService.deleteBook(bkid);
