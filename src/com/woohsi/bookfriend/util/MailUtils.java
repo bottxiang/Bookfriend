@@ -1,26 +1,23 @@
 package com.woohsi.bookfriend.util;
 
-import com.woohsi.bookfriend.po.User;
-
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.servlet.http.HttpSession;
 import java.util.Properties;
-import java.util.UUID;
 
-public class MyUtil {
+/**
+ * 发邮件工具类
+ */
+public final class MailUtils {
     private static final String USER = "vluyue7095@163.com"; // 发件人称号，同邮箱地址
     private static final String PASSWORD = "Joey2019"; // 如果是qq邮箱可以使户端授权码，或者登录密码
 
-    public static Integer getUserId(HttpSession session) {
-        User ruser = (User)session.getAttribute("user");
-        return ruser.getUid();
-    }
-    public static String getUuid() {
-        return UUID.randomUUID().toString().replace("-", "");
-    }
-
+    /**
+     *
+     * @param to 收件人邮箱
+     * @param text 邮件正文
+     * @param title 标题
+     */
     /* 发送验证信息的邮件 */
     public static boolean sendMail(String to, String text, String title){
         try {
@@ -70,9 +67,11 @@ public class MyUtil {
         return false;
     }
 
-    public static void main(String[] args) {
-        System.out.println(MyUtil.getUuid());
-        MyUtil.sendMail("1623387115@qq.com", "这是内容", "重置密码-书友闲置交易平台");
-
+    public static void main(String[] args) throws Exception { // 做测试用
+        MailUtils.sendMail("1623387115@qq.com","注意：今天网上哦消息收","一起吃饭");
+        System.out.println("发送成功");
     }
+
+
+
 }

@@ -9,4 +9,18 @@
     <insert id="register" parameterType="User">
         insert into user(uid, email, pwd) values(null, #{email}, #{password})
     </insert>
+
+    <select id="selectUserByEmail" resultType="User" parameterType="String">
+        select * from user where email = #{email}
+    </select>
+    <select id="selectUserByCode" resultType="User" parameterType="String">
+        select * from user where code = #{code}
+    </select>
+    <update id="updateUser" parameterType="User">
+        update user
+        set email=#{email},
+            pwd=#{password},
+            code=#{code}
+        where uid=#{uid}
+    </update>
 </mapper>

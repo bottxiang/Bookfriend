@@ -6,7 +6,7 @@
 <!--    实例化ApplicationContext容器-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/applicationContext.xml</param-value>
+        <param-value>classpath:/config/applicationContext.xml</param-value>
     </context-param>
 <!--    指定以ContextLoaderListener方式启动Spring容器-->
     <listener>
@@ -16,6 +16,10 @@
     <servlet>
         <servlet-name>springmvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:/config/springmvc-servlet.xml</param-value>
+        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>

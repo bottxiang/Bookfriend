@@ -8,4 +8,10 @@ import javax.servlet.http.HttpSession;
 public interface UserService {
     public String register(User user, Model model, HttpSession session, String code);
     public String login(User user,Model model, HttpSession session, String code);
+
+    public String sendEmail(Model model, HttpSession session, String email);
+
+    public String toResetPwd(Model model, String code);
+
+    public String resetPwd(Model model, String password, String code);
 }

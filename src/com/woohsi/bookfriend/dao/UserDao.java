@@ -10,4 +10,9 @@ import java.util.List;
 public interface UserDao {
    public int register(User user);
    public List<User> login(User user);
+   public User selectUserByEmail(String email);
+
+   public User selectUserByCode(String code);
+
+   public int updateUser(User user);
 }

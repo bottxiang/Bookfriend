@@ -2,6 +2,7 @@ package com.woohsi.bookfriend.service;
 
 import com.woohsi.bookfriend.dao.UserDao;
 import com.woohsi.bookfriend.po.User;
+import com.woohsi.bookfriend.util.MyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,5 +42,49 @@ public class UserServiceImpl implements UserService {
             model.addAttribute("msg", "用户名或密码错误，请重新登录!");
             return "login";
         }
+    }
+
+    @Override
+    public String sendEmail(Model model, HttpSession session, String email) {
+        User user = userDao.selectUserByEmail(email);
+        System.out.println(user);
+        if (user == null) {
+            model.addAttribute("msg", "该邮箱地址不存在！");
+            return "sendEmail";
+        } else {
+            user.setCode(MyUtil.getUuid());
+            userDao.updateUser(user);
+            String content = "<!DOCTYPE HTML><html><body>" +
+                    "<h3>用户 " + user.getEmail() + "：</h3>" +
+                    "<p>请点击以下链接重置密码</p>" +
+                    "<a href=\"http://localhost:8080/user/toResetPwd?code=" +
+                    user.getCode() +
+                    "\">重置密码</a>" +
+                    "</body></html>";
+            MyUtil.sendMail(user.getEmail(), content, "重置密码-书友闲置交易平台");
+            return "sendEmailSuccess";
+        }
+    }
+
+    @Override
+    public String toResetPwd(Model model, String code) {
+        User user = userDao.selectUserByCode(code);
+        if (user != null) {
+            model.addAttribute("code", user.getCode());
+            return "resetpwd";
+        }
+        return null;
+    }
+
+    @Override
+    public String resetPwd(Model model, String password, String code) {
+        User user = userDao.selectUserByCode(code);
+        if (user != null) {
+            user.setPassword(password);
+            user.setCode(null);
+            userDao.updateUser(user);
+            return "resetPwdSuccess";
+        }
+        return null;
     }
 }

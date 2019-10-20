@@ -4,6 +4,7 @@ public class User {
     private Integer uid;
     private String email;
     private String password;
+    private String code;
 
     public Integer getUid() {
         return uid;
@@ -29,12 +30,21 @@ public class User {
         this.password = password;
     }
 
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "uid=" + uid +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", code='" + code + '\'' +
                 '}';
     }
 }
