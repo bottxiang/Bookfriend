@@ -7,60 +7,163 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebf2687a-2f94-4502-a2f2-ab7a9947a6d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/util/MailUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/resetPwdSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/resetpwd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmailSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/userInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/activation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/ant-1.10.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/ant-launcher-1.10.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/asm-7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/cglib-3.2.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/commons-dbcp2-2.7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/commons-fileupload-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/commons-io-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/commons-pool2-2.7.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/javassist-3.24.1-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/javax.mail-api-1.6.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/javax.mail.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/log4j-api-2.11.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/log4j-core-2.11.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/mybatis-3.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/mybatis-spring-2.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/mysql-connector-java-8.0.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/ognl-3.2.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/slf4j-api-1.7.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/slf4j-log4j12-1.7.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/spring-aop-5.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/spring-aspects-5.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/spring-beans-5.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/spring-context-5.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/spring-core-5.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/spring-expression-5.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/spring-jdbc-5.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/spring-tx-5.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/spring-web-5.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/spring-webmvc-5.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/taglibs-standard-compat-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/taglibs-standard-jstlel-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/css/my.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/images/book_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/images/book_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/images/book_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/images/book_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/bookfriend_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/bookfriend_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/my_libs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookfriend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bookfriend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/META-INF/bookfriend.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/IndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/dao/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/po/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/util/MyUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/util/MyUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/addBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/addBook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/bookList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/bookList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/springmvc-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/META-INF/bookfriend.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/input.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/IndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/dao/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/po/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/util/MyUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/util/MyUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/util/MyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/util/MyUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/util/MailUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/util/MailUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/springmvc-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/addBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/addBook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/bookDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/bookDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/bookList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/bookList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/buyOrderList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/buyOrderList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/springmvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/resetPwdSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/resetPwdSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/resetpwd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/resetpwd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/sellOrderList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/sellOrderList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmailSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmailSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/input.jsp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/sellOrderList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmailSuccess.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/test.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39">
+              <caret line="6" column="19" selection-start-line="6" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/userInfo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,11 +174,34 @@
         <option value="Class" />
         <option value="jsf" />
         <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/test.jsp" />
+        <option value="$PROJECT_DIR$/webapp/css/my.css" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/head.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/addBook.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/bookDetail.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/bookList.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/buyOrderList.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/register.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/resetpwd.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/resetPwdSuccess.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/sellOrderList.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmail.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmailSuccess.jsp" />
+        <option value="$PROJECT_DIR$/webapp/WEB-INF/jsp/userInfo.jsp" />
+      </list>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -84,16 +210,86 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="834" />
+    <option name="y" value="75" />
+    <option name="width" value="981" />
+    <option name="height" value="1044" />
+  </component>
   <component name="ProjectId" id="1SDquELiRndTZaJReo5W4j1oD0g" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bookfriend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookfriend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookfriend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookfriend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookfriend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookfriend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bookfriend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookfriend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookfriend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bookfriend" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookfriend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookfriend" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookfriend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookfriend" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookfriend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookfriend" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookfriend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookfriend" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webapp/css" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571769465727" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webapp/WEB-INF/lib" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -106,22 +302,26 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/config" />
-      <recent name="$PROJECT_DIR$/webapp/css" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.woohsi.bookfriend.service" />
+      <recent name="com.woohsi.bookfriend.dao" />
+      <recent name="com.woohsi.bookfriend.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\bookfriend\webapp\WEB-INF" />
       <recent name="$PROJECT_DIR$/webapp/css" />
+      <recent name="$PROJECT_DIR$/webapp" />
       <recent name="$PROJECT_DIR$/webapp/js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.woohsi.bookfriend.util" />
       <recent name="com.woohsi.bookfriend.po" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.woohsi.bookfriend.service" />
-      <recent name="com.woohsi.bookfriend.dao" />
-      <recent name="com.woohsi.bookfriend.exception" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webapp/WEB-INF/jsp" />
+      <recent name="$PROJECT_DIR$/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/config" />
+      <recent name="$PROJECT_DIR$/webapp/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -136,7 +336,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.45">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.46">
     <configuration name="MailUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.woohsi.bookfriend.util.MailUtils" />
       <module name="bookfriend" />
@@ -163,7 +363,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 8.5.45" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.45" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 8.5.46" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.46" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="update-resources" />
@@ -239,8 +439,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.MyUtil" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.45" />
       <item itemvalue="Application.MailUtils" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.46" />
     </list>
     <recent_temporary>
       <list>
@@ -277,8 +477,54 @@
       <workItem from="1571497197173" duration="7273000" />
       <workItem from="1571508876204" duration="2273000" />
       <workItem from="1571537937308" duration="26347000" />
+      <workItem from="1571652675493" duration="7054000" />
+      <workItem from="1571710918601" duration="17928000" />
+      <workItem from="1571754493323" duration="893000" />
+      <workItem from="1571759857358" duration="8299000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8299000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497979" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32867134" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.54195803" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -289,14 +535,261 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/css/my.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woohsi/bookfriend/service/BookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woohsi/bookfriend/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/addBook.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/bookDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/bookList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/buyOrderList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/resetpwd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/resetPwdSuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/sellOrderList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/sendEmailSuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="6" column="19" selection-start-line="6" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/jsp/userInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>bookfriend:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.22098976" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.22098976" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>bookfriend</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.22098976" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

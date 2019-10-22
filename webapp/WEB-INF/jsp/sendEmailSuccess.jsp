@@ -5,6 +5,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<%@include file="head.jsp"%>
     <div class="text-center">
         <p>密码重置链接已发送到你的邮箱！</p>
     </div>

@@ -6,7 +6,7 @@
     <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
+<%@include file="head.jsp"%>
     <table class="table table-striped table-hover">
         <tr>
             <th>#</th>

@@ -4,7 +4,9 @@
 <head>
     <title>我的书籍列表</title>
 </head>
-<body>我的书籍列表:<br>
+<body>
+<%@include file="head.jsp"%>
+我的书籍列表:<br>
     <c:forEach items="${books}" var="book" varStatus="status">
         ${status.index}&nbsp;&nbsp;
         ${book.bkname}&nbsp;&nbsp;

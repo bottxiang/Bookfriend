@@ -3,17 +3,25 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.woohsi.bookfriend.dao.UserDao">
-    <select id="login" resultType="User" parameterType="User">
+    <resultMap id="myResult" type="User">
+        <id property="uid" column="uid" />
+        <result property="email" column="email" />
+        <result property="password" column="pwd" />
+        <result property="code" column="code" />
+    </resultMap>
+    <select id="login" resultMap="myResult" parameterType="User">
         select * from user where email = #{email} and pwd = #{password}
     </select>
     <insert id="register" parameterType="User">
         insert into user(uid, email, pwd) values(null, #{email}, #{password})
     </insert>
-
-    <select id="selectUserByEmail" resultType="User" parameterType="String">
+    <select id="selectUserById" resultMap="myResult" parameterType="Integer">
+        select * from user where uid = #{uid}
+    </select>
+    <select id="selectUserByEmail" resultMap="myResult" parameterType="String">
         select * from user where email = #{email}
     </select>
-    <select id="selectUserByCode" resultType="User" parameterType="String">
+    <select id="selectUserByCode" resultMap="myResult" parameterType="String">
         select * from user where code = #{code}
     </select>
     <update id="updateUser" parameterType="User">

@@ -5,6 +5,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<%@include file="head.jsp"%>
     <div class="container">
         <form action="/user/sendEmail" style="margin-top: 200px;" class="form-inline"  method="post">
             <div style="max-width: 300px; margin: 200px auto;">

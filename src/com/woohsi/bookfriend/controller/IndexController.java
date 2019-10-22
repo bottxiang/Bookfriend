@@ -35,6 +35,14 @@ public class IndexController {
     public String toFindPwd(Model model) {
         return "sendEmail";
     }
+    @RequestMapping("/index")
+    public String index(Model model) {
+        return "index";
+    }
+    @RequestMapping("/test")
+    public String test(Model model) {
+        return "test";
+    }
 
 
 }

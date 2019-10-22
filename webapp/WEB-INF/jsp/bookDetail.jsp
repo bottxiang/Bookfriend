@@ -4,6 +4,7 @@
     <title>书籍详情</title>
 </head>
 <body>
+<%@include file="head.jsp"%>
     <div style="text-align: center">
         <form action="/order/save" method="post">
             <div>${book.bkname}</div>

@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<%@include file="head.jsp"%>
     <div class="regist">
     <form:form action="/user/register" method="post" modelAttribute="user"  name="registerForm">
         Email:<input type="text" name="email" value="${user.email}" /> ${msg}<br>

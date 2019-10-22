@@ -6,8 +6,8 @@ import org.springframework.ui.Model;
 import javax.servlet.http.HttpSession;
 
 public interface UserService {
-    public String register(User user, Model model, HttpSession session, String code);
-    public String login(User user,Model model, HttpSession session, String code);
+    public String register(User user, Model model);
+    public String login(User user,Model model, HttpSession session);
 
     public String sendEmail(Model model, HttpSession session, String email);
 

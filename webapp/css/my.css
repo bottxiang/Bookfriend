@@ -1,0 +1,29 @@
+.book-item {
+    width: 500px;
+    height: 150px;
+    margin: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.book-item .book-img {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    float: left;
+}
+.book-item .book-detail {
+    width: 350px;
+    height: 150px;
+    padding: 20px;
+    float: left;
+}
+.book-item .book-img img {
+    width: 100%;
+    height: auto;
+}
+.book-detail p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}

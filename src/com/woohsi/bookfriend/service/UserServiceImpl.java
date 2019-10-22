@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Override
-    public String register(User user, Model model, HttpSession session, String code) {
+    public String register(User user, Model model) {
         int n = userDao.register(user);
         if (n > 0) {
             return "login";
@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String login(User user, Model model, HttpSession session, String code) {
+    public String login(User user, Model model, HttpSession session) {
         List<User> list = userDao.login(user);
         User ruser = null;
         if (list.size() > 0) {
@@ -79,6 +79,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public String resetPwd(Model model, String password, String code) {
         User user = userDao.selectUserByCode(code);
+        System.out.println(user);
         if (user != null) {
             user.setPassword(password);
             user.setCode(null);
@@ -87,4 +88,5 @@ public class UserServiceImpl implements UserService {
         }
         return null;
     }
+
 }

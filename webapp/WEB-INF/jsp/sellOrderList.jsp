@@ -5,6 +5,7 @@
     <title>订单列表-售出</title>
 </head>
 <body>
+<%@include file="head.jsp"%>
 <c:forEach items="${orders}" var="order" varStatus="status">
     ${status.index}&nbsp;&nbsp;
     ${order.oid}&nbsp;&nbsp;

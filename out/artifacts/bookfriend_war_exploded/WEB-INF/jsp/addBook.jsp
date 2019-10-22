@@ -6,6 +6,7 @@
     <title>添加书籍</title>
 </head>
 <body>
+<%@include file="head.jsp"%>
 <form:form action="/book/save" modelAttribute="book" method="post">
 <%--    <fieldset>--%>
 <%--        <legend>添加书籍</legend>--%>

@@ -17,12 +17,17 @@ public class UserController {
     @Autowired
     private UserService userService;
     @RequestMapping("/register")
-    public String register(@ModelAttribute User user, Model model, HttpSession session, String code) {
-        return userService.register(user, model, session,code);
+    public String register(@ModelAttribute User user, Model model) {
+        return userService.register(user, model);
     }
     @RequestMapping("/login")
-    public String login(@ModelAttribute User user, Model model, HttpSession session, String code) {
-        return userService.login(user, model, session,code);
+    public String login(@ModelAttribute User user, Model model, HttpSession session) {
+        return userService.login(user, model, session);
+    }
+    @RequestMapping("/exit")
+    public String exit(HttpSession session) {
+        session.invalidate();
+        return "login";
     }
     @RequestMapping("/sendEmail")
     public String sendEmail(Model model, HttpSession session, String email) {
@@ -33,9 +38,14 @@ public class UserController {
     public String toResetPwd(Model model, String code) {
         return userService.toResetPwd(model, code);
     }
+
     @RequestMapping("/resetPwd")
     public String resetPwd(Model model, String password, String code) {
         return userService.resetPwd(model, password, code);
+    }
+    @RequestMapping("/userInfo")
+    public String userInfo() {
+        return "userInfo";
     }
 
 }

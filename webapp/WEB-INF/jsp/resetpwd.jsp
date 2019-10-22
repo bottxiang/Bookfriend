@@ -5,18 +5,19 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<%@include file="head.jsp"%>
     <div class="container">
-        <form action="/user/resetpwd"class="form-horizontal" style="margin-top: 200px;">
-            <h2>重设密码</h2>
+        <form action="/user/resetPwd"class="form-horizontal" style="margin-top: 200px;">
+            <h2 class="col-xs-offset-3">重设密码</h2>
             <div class="form-group">
                 <label for="pwd" class="col-xs-2 col-xs-offset-3 control-label">新密码</label>
                 <div class="col-xs-4">
-                    <input type="text" class="form-control" id="pwd" placeholder="New password">
+                    <input type="text" name="password" class="form-control" id="pwd" placeholder="New password">
                 </div>
             </div>
     
             <div class="form-group">
-                <label for="repwd" class="col-xs-2 col-xs-offset-3 control-label">重复新密码</label>
+                <label for="repwd" name="password" class="col-xs-2 col-xs-offset-3 control-label">重复新密码</label>
                 <div class="col-xs-4">
                     <input type="text" class="form-control" id="repwd" placeholder="Repeat new password">
                 </div>

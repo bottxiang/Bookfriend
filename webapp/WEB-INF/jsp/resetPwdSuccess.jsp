@@ -5,6 +5,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<%@include file="head.jsp"%>
 <div class="text-center">
     <p>重置密码成功,请<a href="/toLogin">登录</a></p>
 </div>
