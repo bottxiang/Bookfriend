@@ -4,58 +4,30 @@
 <html>
 <head>
     <title>添加书籍</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/my.css" rel="stylesheet">
 </head>
 <body>
 <%@include file="head.jsp"%>
-<form:form action="/book/save" modelAttribute="book" method="post">
-<%--    <fieldset>--%>
-<%--        <legend>添加书籍</legend>--%>
-<%--        <label>书名</label>--%>
-<%--        <form:input path="bkname" />--%>
-<%--        <input type="reset" value="Reset"/>--%>
-<%--        <input type="submit" value="发布"/>--%>
-<%--    </fieldset>--%>
-    <table style="border-collapse: collapse">
-        <caption>添加书籍</caption>
-        <tr>
-            <td>书名</td>
-            <td>
-                <form:input path="bkname"/>
-            </td>
-        </tr>
-        <tr>
-            <td>价格</td>
-            <td>
-                <form:input path="bkprice"/>
-            </td>
-        </tr>
-        <tr>
-            <td>出版社</td>
-            <td>
-                <form:input path="bkpress"/>
-            </td>
-        </tr>
-        <tr>
-            <td>书籍描述</td>
-            <td>
-                <form:input path="bkdescription"/>
-            </td>
-        </tr>
-        <tr>
-            <td>售卖状态</td>
-            <td>
-                <form:input path="status"/>
-            </td>
-        </tr>
-        <%-- 卖家id--%>
-        <form:hidden path="uid" value="<%=MyUtil.getUserId(session)%>" />
-        <tr>
-            <td colspan="2">
-                <input type="reset" value="Reset"/>
-                <input type="submit" value="发布"/>
-            </td>
-        </tr>
-    </table>
-</form:form>
+<div class="container">
+    <form:form action="/book/save" cssClass="form-addbook" modelAttribute="book" method="post">
+        <h2>添加书籍</h2>
+        <label for="bkname">书名：</label>
+        <input type="text" class="form-control" id="bkname" name="bkname">
+        <label for="bkprice">价格：</label>
+        <input type="text" class="form-control" id="bkprice" name="bkprice">
+        <label for="bkpress">出版社：</label>
+        <input type="text" class="form-control" id="bkpress" name="bkpress">
+        <label for="bkdescription">描述：</label>
+        <input type="text" class="form-control" id="bkdescription" name="bkdescription">
+        <label for="status">售卖状态：</label>
+        <input type="radio" id="status" name="status" value="0" checked>未售出
+        <input type="radio" id="status" name="status" value="1">已售出
+        <input type="hidden" class="form-control" name="uid" value="<%=MyUtil.getUserId(session)%>">
+        <input type="submit" class="form-control btn btn-success btn-sm" value="发布">
+    </form:form>
+</div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>

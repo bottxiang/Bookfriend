@@ -14,5 +14,8 @@ public interface BookDao {
     public Book queryBook(Integer bkid);
     public int updateBook(Book book);
     public int deleteBook(Integer bkid);
-    List<Book> selectAllBooks(Integer uid);
+    List<Book> selectAllBooks();
+    List<Book> selectBookByUid(Integer uid);
+
+    List<Book> selectBookByKeyword(String keyword);
 }

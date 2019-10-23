@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>书籍详情</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/my.css" rel="stylesheet">
 </head>
 <body>
 <%@include file="head.jsp"%>
@@ -16,5 +18,7 @@
         </form>
 
     </div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>

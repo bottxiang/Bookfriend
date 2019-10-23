@@ -5,6 +5,17 @@
     background-color: #eee;
     border-radius: 5px;
 }
+a {
+    text-decoration: none;
+    color: #282a2b;
+}
+.book-item a {
+    text-decoration: none;
+    color: #282a2b;
+}
+.book-item a:hover, .book-item a:visited, .book-item a:link, .book-item a:active {
+    text-decoration: none;
+}
 .book-item .book-img {
     width: 150px;
     height: 150px;
@@ -21,9 +32,52 @@
     width: 100%;
     height: auto;
 }
+.book-detail {
+    font-size: 20px;
+}
 .book-detail p {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff center;
+}
+.user-info {
+    width: 500px;
+    height: 220px;
+    background: #eee;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 5px;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #eee;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    /*left: calc(50% - 50px);*/
+}
+.detail p{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-width: bold;
+    color: #000000;
+}
+.form-addbook {
+    max-width: 300px;
+    padding: 15px;
+    margin: 0 auto;
 }

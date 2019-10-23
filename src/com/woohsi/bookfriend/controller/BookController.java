@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.jws.WebParam.Mode;
 import javax.servlet.http.HttpSession;
 
 @Controller
@@ -31,8 +32,15 @@ public class BookController {
         return bookService.deleteBook(bkid);
     }
     @RequestMapping("/list")
-    public String listBook(Model model, HttpSession session) {
-        return bookService.listBook(model, session);
+    public String listAllBooks(Model model) {
+        return bookService.listAllBooks(model);
     }
-
+    @RequestMapping("/list-mysell")
+    public String listMySell(Model model, HttpSession session) {
+        return bookService.listMySell(model, session);
+    }
+    @RequestMapping("/search")
+    public String search(Model model, String keyword) {
+        return bookService.searchBook(model, keyword);
+    }
 }

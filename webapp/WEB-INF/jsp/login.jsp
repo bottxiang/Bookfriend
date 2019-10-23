@@ -1,10 +1,11 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>登录</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/my.css" rel="stylesheet">
 </head>
 <body>
 <%@include file="head.jsp"%>
@@ -20,7 +21,7 @@
                         ${msg}
                 </div>
             </c:if>
-            <input type="submit" class="btn btn-lg btn-success" value="Login" />
+            <input type="submit" class="btn btn-sm btn-success" value="Login" />
             没有账号？<a href="/toRegister">立即注册</a>
             <a href="/toFindPwd">找回密码</a>
         </div>

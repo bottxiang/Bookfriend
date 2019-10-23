@@ -49,9 +49,23 @@ public class BookServiceImpl implements BookService{
     }
 
     @Override
-    public String listBook(Model model, HttpSession session) {
-       List<Book> books = bookDao.selectAllBooks(MyUtil.getUserId(session));
+    public String listAllBooks(Model model) {
+       List<Book> books = bookDao.selectAllBooks();
        model.addAttribute("books", books);
-       return "bookList";
+       return "index";
+    }
+
+    @Override
+    public String listMySell(Model model, HttpSession session) {
+        List<Book> books = bookDao.selectBookByUid(MyUtil.getUserId(session));
+        model.addAttribute("books", books);
+        return "mySellBookList";
+    }
+
+    @Override
+    public String searchBook(Model model, String keyword) {
+        List<Book> books = bookDao.selectBookByKeyword(keyword);
+        model.addAttribute("books", books);
+        return "index";
     }
 }

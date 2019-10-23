@@ -21,8 +21,15 @@
             uid=#{uid}
         where bkid=#{bkid}
     </update>
-    <select id="selectAllBooks" parameterType="Integer" resultType="Book">
+    <select id="selectAllBooks" resultType="Book">
+        select * from book
+    </select>
+    <select id="selectBookByUid" parameterType="Integer" resultType="Book">
         select * from book where uid=#{uid}
+    </select>
+
+    <select id="selectBookByKeyword" parameterType="String" resultType="Book">
+        select * from book where bkname like concat('%', #{keyword}, '%');
     </select>
     <delete id="deleteBook" parameterType="Integer">
         delete from book where bkid=#{bkid}

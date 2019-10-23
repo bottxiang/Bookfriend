@@ -37,7 +37,7 @@ public class IndexController {
     }
     @RequestMapping("/index")
     public String index(Model model) {
-        return "index";
+        return "forward:/book/list";
     }
     @RequestMapping("/test")
     public String test(Model model) {

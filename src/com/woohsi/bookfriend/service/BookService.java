@@ -10,6 +10,9 @@ public interface BookService {
     public String queryBook(Model model, Integer bkid);
     public String updateBook(Book book);
     public String deleteBook(Integer bkid);
-    public String listBook(Model model, HttpSession session);
+    public String listAllBooks(Model model);
 
+    public String listMySell(Model model, HttpSession session);
+
+    public String searchBook(Model model, String keyword);
 }
