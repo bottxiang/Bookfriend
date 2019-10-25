@@ -3,7 +3,7 @@
 <head>
     <title>重置邮件发送成功</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/my.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
 <%@include file="head.jsp"%>

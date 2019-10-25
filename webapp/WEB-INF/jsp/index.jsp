@@ -4,7 +4,7 @@
 <head>
     <title>主页</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/my.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>

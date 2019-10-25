@@ -47,5 +47,9 @@ public class UserController {
     public String userInfo() {
         return "userInfo";
     }
+    @RequestMapping("/delete")
+    public String deleteUser(HttpSession session) {
+        return userService.deleteUser(session);
+    }
 
 }

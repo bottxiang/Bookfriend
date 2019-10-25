@@ -16,17 +16,11 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <form action="/book/search" class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" name="keyword" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-success">搜索</button>
-                </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <c:if test="${user==null}">
+                    <c:if test="${user.uid==null}">
                         <li><a href="/toLogin">登录</a></li>
                     </c:if>
-                    <c:if test="${user!=null}">
+                    <c:if test="${user.uid!=null}">
                         <%--书籍管理--%>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">书籍管理 <span class="caret"></span></a>
@@ -56,6 +50,12 @@
                         </li>
                     </c:if>
                 </ul>
+                <form action="/book/search" class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" name="keyword" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-success">搜索</button>
+                </form>
             </div>
         </div><!-- /.container-fluid -->
     </nav>

@@ -13,6 +13,6 @@ public interface UserDao {
    public User selectUserByEmail(String email);
 
    public User selectUserByCode(String code);
-
+   public int deleteUser(Integer uid);
    public int updateUser(User user);
 }

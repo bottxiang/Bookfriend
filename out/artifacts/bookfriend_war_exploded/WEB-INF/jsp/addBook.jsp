@@ -5,12 +5,12 @@
 <head>
     <title>添加书籍</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/my.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
 <%@include file="head.jsp"%>
 <div class="container">
-    <form:form action="/book/save" cssClass="form-addbook" modelAttribute="book" method="post">
+    <form:form action="/book/save" cssClass="form-addbook well well-lg" modelAttribute="book" method="post">
         <h2>添加书籍</h2>
         <label for="bkname">书名：</label>
         <input type="text" class="form-control" id="bkname" name="bkname">

@@ -3,7 +3,7 @@
 <head>
     <title>找回密码</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/my.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
 <%@include file="head.jsp"%>

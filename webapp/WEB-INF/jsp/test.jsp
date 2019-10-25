@@ -5,23 +5,29 @@
     <title>Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/my.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <style>
 
     </style>
 </head>
 <body>
-    <div class="user-info">
-        <img class="avatar" src="/images/avatar.png">
-        <div class="detail">
-            <p>id：${user.uid}</p>
-            <p>邮箱：${user.email}</p>
-            <p>注册时间：2019.1.1</p>
-            <button type="button" class="btn btn-default btn-sm pull-right">注销账号</button>
-            <button type="button" class="btn btn-default btn-sm pull-right">修改密码</button>
+<form action="/order/save" method="post">
+    <div class="big-book-item">
+        <div class="book-img"  >
+            <img src="/images/book_1.jpg">
+        </div>
+        <div class="book-detail">
+            <div>书名：${book.bkname}</div>
+            <div>价格：${book.bkprice}</div>
+            <p>描述：${book.bkdescription}</p>
+            <div>售卖状态：${book.status==0?"未售出":"已售出"}</div>
+            <div><a href="#">联系卖家</a></div>
+            <input type="hidden" name="bkid" value="${book.bkid}"/>
+            <input type="hidden" name="suid" value="${book.uid}"/>
+            ${book.status==0?"<input type=\"submit\" value=\"购买\"/>":"btn-none"}
         </div>
     </div>
-
+</form>
 
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>

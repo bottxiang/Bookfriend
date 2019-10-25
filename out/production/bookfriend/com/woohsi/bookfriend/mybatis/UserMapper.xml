@@ -31,4 +31,7 @@
             code=#{code}
         where uid=#{uid}
     </update>
+    <delete id="deleteUser" parameterType="Integer">
+        delete from user where uid=#{uid}
+    </delete>
 </mapper>

@@ -14,4 +14,6 @@ public interface UserService {
     public String toResetPwd(Model model, String code);
 
     public String resetPwd(Model model, String password, String code);
+
+    public String deleteUser(HttpSession session);
 }

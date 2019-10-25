@@ -89,4 +89,12 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
+    @Override
+    public String deleteUser(HttpSession session) {
+        userDao.deleteUser(MyUtil.getUserId(session));
+        System.out.println(MyUtil.getUserId(session));
+        session.invalidate();
+        return "redirect:/index";
+    }
+
 }

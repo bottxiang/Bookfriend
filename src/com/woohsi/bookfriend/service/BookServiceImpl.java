@@ -35,7 +35,7 @@ public class BookServiceImpl implements BookService{
     @Override
     public String updateBook(Book book) {
         if (bookDao.updateBook(book) > 0) {
-            return "redirect:/book/list";
+            return "redirect:/book/list-mysell";
         }
         return null;
     }
@@ -43,7 +43,7 @@ public class BookServiceImpl implements BookService{
     @Override
     public String deleteBook(Integer bkid) {
         if (bookDao.deleteBook(bkid) > 0) {
-            return "redirect:/book/list";
+            return "redirect:/book/list-mysell";
         }
         return null;
     }

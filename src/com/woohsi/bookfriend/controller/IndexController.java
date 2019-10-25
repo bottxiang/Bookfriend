@@ -22,7 +22,11 @@ public class IndexController {
         return "register";
     }
     @RequestMapping("/toLogin")
-    public String toLogin(Model model) {
+    public String toLogin(Model model, HttpSession session) {
+
+        if (session.getAttribute("user") != null) {
+            return "redirect:/index";
+        }
         model.addAttribute("user", new User());
         return "login";
     }
