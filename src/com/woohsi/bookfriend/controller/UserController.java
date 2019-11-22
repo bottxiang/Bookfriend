@@ -43,6 +43,11 @@ public class UserController {
     public String resetPwd(Model model, String password, String code) {
         return userService.resetPwd(model, password, code);
     }
+    @RequestMapping("/changePwd")
+    public String changePwd(Model model, HttpSession session, String password, String repassword) {
+        return userService.changePwd(model, session, password, repassword);
+    }
+
     @RequestMapping("/userInfo")
     public String userInfo() {
         return "userInfo";

@@ -39,6 +39,15 @@
                                 <li><a href="/order/list-sell">我卖的</a></li>
                             </ul>
                         </li>
+                        <%--消息管理--%>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">消息 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/order/list-buy">查看消息</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">---</a></li>
+                            </ul>
+                        </li>
                         <%--个人中心--%>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心 <span class="caret"></span></a>

@@ -31,7 +31,6 @@ public class OrderServiceImpl implements OrderService {
         //更新书籍状态为“已出售”
         Book book = bookDao.queryBook(bkid);
         book.setStatus(1);
-        System.out.println(book);
         bookDao.updateBook(book);
         return "redirect:/order/list-buy";
     }
@@ -48,6 +47,22 @@ public class OrderServiceImpl implements OrderService {
         List<Map<String, Object>> orders = orderDao.selectAllBuyOrders(MyUtil.getUserId(session));
         model.addAttribute("orders", orders);
         return "buyOrderList";
+    }
+
+    @Override
+    public String cancelOrder(Model model, HttpSession session, Integer oid, Integer bkid, String who) {
+        orderDao.deleteOrder(oid);
+        //更新书籍状态为“未出售”
+        Book book = bookDao.queryBook(bkid);
+        book.setStatus(0);
+        bookDao.updateBook(book);
+        if (who.equals("buyer")) {
+            return listBuyOrders(model,session);
+        }
+        if (who.equals("seller")) {
+            return listSellOrders(model,session);
+        }
+        return null;
     }
 
 }

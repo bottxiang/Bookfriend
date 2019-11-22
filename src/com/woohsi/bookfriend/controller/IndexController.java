@@ -1,6 +1,7 @@
 package com.woohsi.bookfriend.controller;
 
 import com.woohsi.bookfriend.po.Book;
+import com.woohsi.bookfriend.po.BookForm;
 import com.woohsi.bookfriend.po.User;
 import com.woohsi.bookfriend.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +33,7 @@ public class IndexController {
     }
     @RequestMapping("/toAddBook")
     public String toAddBook(Model model) {
-        model.addAttribute("book", new Book());
+        model.addAttribute("book", new BookForm());
         return "addBook";
     }
     @RequestMapping("/toFindPwd")

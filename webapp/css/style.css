@@ -58,8 +58,8 @@ a {
     font-size: 20px;
 }
 .book-item .book-img img {
-    width: 100%;
-    height: auto;
+    max-width: 150px;
+    max-height: 150px;
 }
 
 .book-item .book-detail p {
@@ -112,4 +112,29 @@ body {
     width: 300px;
     padding: 15px;
     margin: 0 auto;
+}
+#chat-box {
+    background-color: #eee;
+    max-width: 500px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+#chat-box .left {
+    /*float: left;*/
+    max-width: 70%;
+    padding: 5px;
+    margin-right: auto;;
+    background-color: darkcyan;
+    color: cornsilk;
+    border-radius: 10px;
+}
+#chat-box .right {
+
+    max-width: 70%;
+    padding: 5px;
+    margin-left: auto;;
+    background-color: cornflowerblue;
+    color: cornsilk;
+    border-radius: 10px;
 }

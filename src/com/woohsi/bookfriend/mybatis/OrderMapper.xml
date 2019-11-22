@@ -9,14 +9,14 @@
         values(null, #{bkid}, #{buid}, #{suid})
     </insert>
     <select id="selectAllSellOrders" parameterType="Integer" resultType="map">
-        select `order`.oid, book.bkname, book.bkprice, buser.email
+        select `order`.oid, book.bkid, book.bkname, book.bkprice, buser.email
         from book, `order`, user buser where `order`.bkid=book.bkid and order.buid=buser.uid and `order`.suid=#{uid}
     </select>
     <select id="selectAllBuyOrders" parameterType="Integer" resultType="map">
-        select `order`.oid, book.bkname, book.bkprice, suser.email
+        select `order`.oid, book.bkid, book.bkname, book.bkprice, suser.email
         from book, `order`, user suser where `order`.bkid=book.bkid and `order`.suid=suser.uid and `order`.buid=#{uid}
     </select>
     <delete id="deleteOrder" parameterType="Integer">
-        delete from Order where bkid=#{bkid}
+        delete from `order` where oid=#{oid}
     </delete>
 </mapper>

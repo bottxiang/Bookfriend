@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>在线聊天室</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <div><span>聊天室</span>
+        <button class="btn btn-warning" onclick="doClose();">退出聊天</button>
+    </div>
+    <div><textarea class="form-control" style="width: 40%;" rows="3" id="contentInp"></textarea></div><hr/>
+    <div><button class="btn btn-danger" onclick="doClear();">清空会话框</button></div>
+    <div id="content">开始聊天<br/></div>
+</div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+<script type="text/javascript">
+    var ws = new WebSocket("ws://localhost:8080/websocket"); //controller层url
+    $(function(){
+        $("#contentInp").keyup(function(evt){
+            if(evt.which == 13){ //enter键发送消息
+                var htm = $("#contentInp").val();
+                doSend(htm);
+                $("textarea").val("");
+            }
+        });
+    })
+
+    ws.onopen = function(){
+        appendHtm("连接成功！");
+    }
+
+    // 从服务端接收到消息，将消息回显到聊天记录区
+    ws.onmessage = function(evt){
+        appendHtm(evt.data);
+    }
+
+    ws.onerror = function(){
+        appendHtm("连接失败！");
+    }
+
+    ws.onclose = function(){
+        appendHtm("连接关闭！");
+    }
+
+    function appendHtm(htm){
+        ($("#content")[0]).innerHTML += htm +"<br/>"
+    }
+
+    // 注销登录
+    function doClose(){
+        ws.close();
+    }
+
+    // 发送消息
+    function doSend(htm){
+        // ($("#content")[0]).innerHTML += htm +"<br/>"
+        ws.send(htm);
+    }
+
+    function doClear(){
+        $("#content").empty();
+    }
+</script>
+</html>

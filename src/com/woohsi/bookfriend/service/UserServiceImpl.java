@@ -97,4 +97,13 @@ public class UserServiceImpl implements UserService {
         return "redirect:/index";
     }
 
+    @Override
+    public String changePwd(Model model, HttpSession session, String password, String repassword) {
+        User user = userDao.selectUserByUid(MyUtil.getUserId(session));
+        user.setPassword(password);
+        session.invalidate();
+        userDao.updateUser(user);
+        return "changePwdSuccess";
+    }
+
 }

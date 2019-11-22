@@ -15,6 +15,7 @@
             <th>书名</th>
             <th>价格</th>
             <th>买家</th>
+            <th></th>
         </tr>
         <c:forEach items="${orders}" var="order" varStatus="status">
             <tr>
@@ -23,6 +24,7 @@
                 <td>${order.bkname}</td>
                 <td>${order.bkprice}</td>
                 <td>${order.email}</td>
+                <td><a href="/order/cancel?oid=${order.oid}&bkid=${order.bkid}&who=seller"><button type="submit" class="btn btn-danger">取消订单</button></a></td>
             </tr>
         </c:forEach>
     </table>

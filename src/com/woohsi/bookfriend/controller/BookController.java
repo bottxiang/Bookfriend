@@ -3,6 +3,7 @@ package com.woohsi.bookfriend.controller;
 import com.google.gson.Gson;
 import com.woohsi.bookfriend.dao.BookDao;
 import com.woohsi.bookfriend.po.Book;
+import com.woohsi.bookfriend.po.BookForm;
 import com.woohsi.bookfriend.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.converter.json.GsonBuilderUtils;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.jws.WebParam.Mode;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
@@ -27,8 +29,8 @@ public class BookController {
     private BookDao bookDao;
 
     @RequestMapping("/save")
-    public String saveBook(@ModelAttribute Book book) {
-        return bookService.saveBook(book);
+    public String saveBook(@ModelAttribute BookForm bookForm, HttpServletRequest request) {
+        return bookService.saveBook(bookForm, request);
     }
     @RequestMapping("/query")
     public String queryBook(Model model, Integer bkid) {

@@ -11,4 +11,5 @@ public interface OrderService {
     public String saveOrder(Model model, HttpSession session, Integer bkid, Integer suid);
     public String listSellOrders(Model model, HttpSession session);
     public String listBuyOrders(Model model, HttpSession session);
+    public String cancelOrder(Model model, HttpSession session, Integer oid, Integer bkid, String who);
 }

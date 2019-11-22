@@ -12,4 +12,5 @@ public interface OrderDao {
     public int saveOrder(Map<String, Object> map);
     public List<Map<String, Object>> selectAllSellOrders(Integer suid);
     public List<Map<String, Object>> selectAllBuyOrders(Integer buid);
+    public int deleteOrder(Integer oid);
 }

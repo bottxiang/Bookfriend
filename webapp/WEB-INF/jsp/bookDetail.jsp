@@ -13,7 +13,7 @@
 <form action="/order/save" method="post">
     <div class="big-book-item">
         <div class="book-img"  >
-            <img src="/images/book_1.jpg">
+            <img src="/images/${book.bkimg!=null?book.bkimg:"book_1.jpg"}">
         </div>
         <div class="book-detail">
             <div>书名：${book.bkname}</div>
@@ -22,9 +22,9 @@
             <div>售卖状态：${book.status==0?"未售出":"已售出"}</div>
 
             <input type="hidden" name="bkid" value="${book.bkid}"/>
-            <input type="hidden" name="suid" value="${book.uid}"/>
+            <input name="suid" value="${book.uid}"/>
             <div>${book.status==0?"<input class=\"btn btn-success btn-md\" type=\"submit\" value=\"购买\"/>":""}
-                <a href="#"><i class="fas fa-sms" style="color: #168539; margin-top: 10px; margin-left: 10px;">联系卖家</i></a>
+                <a href="/message/chat?toUser=${book.uid}"><i class="fas fa-sms" style="color: #168539; margin-top: 10px; margin-left: 10px;">联系卖家</i></a>
             </div>
         </div>
     </div>

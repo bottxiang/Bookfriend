@@ -26,4 +26,8 @@ public class OrderController {
     public String listSellOrders(Model model, HttpSession session) {
         return orderService.listSellOrders(model, session);
     }
+    @RequestMapping("/cancel")
+    public String cancelOrder(Model model, HttpSession session, Integer oid, Integer bkid, String who) {
+        return orderService.cancelOrder(model, session, oid, bkid, who);
+    }
 }

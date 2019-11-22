@@ -52,9 +52,9 @@
                 <tr>
                     <td>${status.count}</td>
                     <td>${book.bkname}</td>
-                    <td><a href="/book/query?bkid=${book.bkid}">详情</a></td>
-                    <td><a href="javascript:void(0)" onclick="edit(${book.bkid})">编辑</a></td>
-                    <td><a href="/book/delete?bkid=${book.bkid}">删除</a></td>
+                    <td><a href="/book/query?bkid=${book.bkid}"><button type="submit" class="btn btn-success">详情</button></a></td>
+                    <td><a href="javascript:void(0)" onclick="edit(${book.bkid})"><button type="submit" class="btn btn-primary">编辑</button></a></td>
+                    <td><a href="/book/delete?bkid=${book.bkid}"><button type="submit" class="btn btn-danger">删除</button></a></td>
                 </tr>
             </c:forEach>
         </table>

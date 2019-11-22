@@ -1,24 +1,47 @@
 package com.woohsi.bookfriend.service;
 
-import com.mysql.cj.protocol.x.Notice.XSessionStateChanged;
-import com.mysql.cj.protocol.x.Notice.XSessionVariableChanged;
 import com.woohsi.bookfriend.dao.BookDao;
 import com.woohsi.bookfriend.po.Book;
+import com.woohsi.bookfriend.po.BookForm;
 import com.woohsi.bookfriend.po.User;
 import com.woohsi.bookfriend.util.MyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
+import java.util.UUID;
 
 @Service("bookService")
 public class BookServiceImpl implements BookService{
     @Autowired
     private BookDao bookDao;
     @Override
-    public String saveBook(Book book) {
+    public String saveBook(BookForm bookForm, HttpServletRequest request) {
+        MultipartFile multipartFile = bookForm.getBkimg();
+        String filename = multipartFile.getOriginalFilename();
+        String newFilename = UUID.randomUUID() + filename.substring(filename.lastIndexOf("."));
+        File imgFile = new File(request.getServletContext().getRealPath("/images"), newFilename);
+        try {
+            multipartFile.transferTo(imgFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Book book = new Book();
+        book.setBkid(bookForm.getBkid());
+        book.setBkname(bookForm.getBkname());
+        book.setBkprice(bookForm.getBkprice());
+        book.setBkpress(bookForm.getBkpress());
+        book.setBkdescription(bookForm.getBkdescription());
+        book.setStatus(bookForm.getStatus());
+        book.setUid(bookForm.getUid());
+        book.setBkimg(newFilename);
+        System.out.println(book);
         if (bookDao.saveBook(book) > 0) {
             return "redirect:/book/list";
         }

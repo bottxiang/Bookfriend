@@ -14,7 +14,7 @@
             <div class="book-item">
                 <a href="/book/query?bkid=${book.bkid}">
                     <div class="book-img"  >
-                        <img src="/images/book_1.jpg">
+                        <img src="/images/${book.bkimg!=null?book.bkimg:"book_1.jpg"}">
                     </div>
                     <div class="book-detail">
                         <div>书名：${book.bkname}</div>

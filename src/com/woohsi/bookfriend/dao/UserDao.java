@@ -15,4 +15,5 @@ public interface UserDao {
    public User selectUserByCode(String code);
    public int deleteUser(Integer uid);
    public int updateUser(User user);
+   public User selectUserByUid(Integer userId);
 }

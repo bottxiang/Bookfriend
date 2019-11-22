@@ -5,6 +5,7 @@ public class User {
     private String email;
     private String password;
     private String code;
+    private String img;
 
     public Integer getUid() {
         return uid;
@@ -38,13 +39,11 @@ public class User {
         this.code = code;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "uid=" + uid +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", code='" + code + '\'' +
-                '}';
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }

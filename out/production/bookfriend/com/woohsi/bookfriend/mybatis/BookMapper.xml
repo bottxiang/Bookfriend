@@ -5,8 +5,8 @@
 <mapper namespace="com.woohsi.bookfriend.dao.BookDao">
 
     <insert id="saveBook" parameterType="Book">
-        insert into book(bkid,bkname,bkprice,bkpress,bkdescription,status,uid)
-        values(null, #{bkname}, #{bkprice}, #{bkpress}, #{bkdescription}, #{status}, #{uid})
+        insert into book(bkid,bkname,bkprice,bkpress,bkdescription,status,uid,bkimg)
+        values(null, #{bkname}, #{bkprice}, #{bkpress}, #{bkdescription}, #{status}, #{uid}, #{bkimg})
     </insert>
     <select id="queryBook" parameterType="Integer" resultType="Book">
         select * from book where bkid=#{bkid}
@@ -18,7 +18,8 @@
             bkpress=#{bkpress},
             bkdescription=#{bkdescription},
             status=#{status},
-            uid=#{uid}
+            uid=#{uid},
+            bkimg=#{bkimg}
         where bkid=#{bkid}
     </update>
     <select id="selectAllBooks" resultType="Book">

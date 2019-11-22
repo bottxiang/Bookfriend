@@ -10,7 +10,7 @@
 <body>
 <%@include file="head.jsp"%>
 <div class="container">
-    <form:form action="/book/save" cssClass="form-addbook well well-lg" modelAttribute="book" method="post">
+    <form:form action="/book/save" cssClass="form-addbook well well-lg" modelAttribute="bookForm" method="post" enctype="multipart/form-data">
         <h2>添加书籍</h2>
         <label for="bkname">书名：</label>
         <input type="text" class="form-control" id="bkname" name="bkname">
@@ -24,6 +24,9 @@
         <input type="radio" id="status" name="status" value="0" checked>未售出
         <input type="radio" id="status" name="status" value="1">已售出
         <input type="hidden" class="form-control" name="uid" value="<%=MyUtil.getUserId(session)%>">
+        <br>
+        <label for="bkimg">书籍图片：</label>
+        <input type="file" class="form-control" id="bkimg" name="bkimg">
         <input type="submit" class="form-control btn btn-success btn-sm" value="发布">
     </form:form>
 </div>

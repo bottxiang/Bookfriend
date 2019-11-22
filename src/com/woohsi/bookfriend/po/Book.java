@@ -12,6 +12,7 @@ public class Book {
     private String bkdescription;//书籍描述
     private Integer status;//书籍售卖状态 1:已售出 0:未售出
     private Integer uid;//卖家id
+    private String bkimg;
 
     public Integer getBkid() {
         return bkid;
@@ -69,6 +70,14 @@ public class Book {
         this.uid = uid;
     }
 
+    public String getBkimg() {
+        return bkimg;
+    }
+
+    public void setBkimg(String bkimg) {
+        this.bkimg = bkimg;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -79,6 +88,7 @@ public class Book {
                 ", bkdescription='" + bkdescription + '\'' +
                 ", status=" + status +
                 ", uid=" + uid +
+                ", bkimg='" + bkimg + '\'' +
                 '}';
     }
 }

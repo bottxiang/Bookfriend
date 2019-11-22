@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.woohsi.bookfriend.dao.MessageDao">
+
+    <insert id="saveMessage" parameterType="Message">
+        insert into message(mid, `from`, `to`, content)
+        values(null, #{from}, #{to}, #{content})
+    </insert>
+    <select id="selectMessageByUid" parameterType="Integer" resultType="Message">
+        select * from message where `from`=#{uid} or `to`=#{uid}
+    </select>
+
+    <delete id="deleteMessageByUid" parameterType="Integer">
+        delete from message where `from`=#{uid}
+    </delete>
+</mapper>
