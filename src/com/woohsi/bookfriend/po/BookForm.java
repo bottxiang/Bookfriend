@@ -10,7 +10,8 @@ public class BookForm {
     private String bkdescription;//书籍描述
     private Integer status;//书籍售卖状态 1:已售出 0:未售出
     private Integer uid;//卖家id
-    private MultipartFile bkimg;
+    private Integer onsell;//书籍上架状态 1:已上架 0:待审核
+    private MultipartFile bkimg;//书籍图片地址
 
     public Integer getBkid() {
         return bkid;
@@ -74,5 +75,13 @@ public class BookForm {
 
     public void setBkimg(MultipartFile bkimg) {
         this.bkimg = bkimg;
+    }
+
+    public Integer getOnsell() {
+        return onsell;
+    }
+
+    public void setOnsell(Integer onsell) {
+        this.onsell = onsell;
     }
 }

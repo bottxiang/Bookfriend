@@ -7,76 +7,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebf2687a-2f94-4502-a2f2-ab7a9947a6d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/MessageDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/MessageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/BookForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/MessageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/changePwdSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/chat.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/html/chat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/AdminDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/NotifyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/AdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/NotifyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/Notify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/NotifyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/NotifyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/admin_head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/admin_index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/admin_login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/myAllBookList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/notify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/waitCheck.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/images/default_book.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/BookController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/dao/BookDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/BookMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/mybatis/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/po/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/po/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/po/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/BookService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/BookServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/classes/com/woohsi/bookfriend/service/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/addBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/addBook.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookfriend_war_exploded/WEB-INF/jsp/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/BookController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/dao/BookDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/BookMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/mybatis/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/po/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/po/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/po/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/BookService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/BookServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bookfriend/com/woohsi/bookfriend/service/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/BookDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/MessageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/dao/MessageDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/BookMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/MessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/MessageMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/mybatis/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/BookForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/po/BookForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/woohsi/bookfriend/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/springmvc-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/addBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/addBook.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/bookDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/bookDetail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/buyOrderList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/buyOrderList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/chat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/chat.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/head.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/mySellBookList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/mySellBookList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/resetpwd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/resetpwd.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/sellOrderList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/sellOrderList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/test.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/jsp/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/jsp/userInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/images/b09f6c11-2456-4c06-8fbc-63a4e27ec3bc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/images/book_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/images/book_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/images/book_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/images/book_4.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,9 +97,9 @@
         <option value="jsf" />
         <option value="CSS File" />
         <option value="HTML File" />
-        <option value="Jsp File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -118,7 +123,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TP-j2ee" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Algorithems" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -133,19 +138,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/webapp/html" />
       <recent name="$PROJECT_DIR$/webapp/WEB-INF/jsp" />
+      <recent name="$PROJECT_DIR$/webapp/html" />
       <recent name="$PROJECT_DIR$/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/config" />
       <recent name="$PROJECT_DIR$/webapp/css" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.woohsi.bookfriend.dao" />
-      <recent name="com.woohsi.bookfriend.service" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.woohsi.bookfriend.util" />
-      <recent name="com.woohsi.bookfriend.po" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/webapp/WEB-INF/lib" />
@@ -153,6 +150,15 @@
       <recent name="$PROJECT_DIR$/webapp/css" />
       <recent name="$PROJECT_DIR$/webapp" />
       <recent name="$PROJECT_DIR$/webapp/fonts" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.woohsi.bookfriend.util" />
+      <recent name="com.woohsi.bookfriend.po" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.woohsi.bookfriend.dao" />
+      <recent name="com.woohsi.bookfriend.service" />
+      <recent name="com.woohsi.bookfriend.po" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -333,6 +339,18 @@
       <workItem from="1574253493799" duration="13619000" />
       <workItem from="1574327596281" duration="27258000" />
       <workItem from="1574390697103" duration="6240000" />
+      <workItem from="1574423539186" duration="2495000" />
+      <workItem from="1574432211155" duration="10853000" />
+      <workItem from="1574444529238" duration="239000" />
+      <workItem from="1574508071312" duration="13439000" />
+      <workItem from="1574593161914" duration="726000" />
+      <workItem from="1574598287336" duration="1803000" />
+      <workItem from="1574874133422" duration="4097000" />
+      <workItem from="1574906841663" duration="7509000" />
+      <workItem from="1575193342926" duration="3183000" />
+      <workItem from="1575208058384" duration="92000" />
+      <workItem from="1575253993131" duration="18601000" />
+      <workItem from="1575334732036" duration="1047000" />
     </task>
     <servers />
   </component>
@@ -365,5 +383,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/webapp/WEB-INF/jsp/notify.jsp</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

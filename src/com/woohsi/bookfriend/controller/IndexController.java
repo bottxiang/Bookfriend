@@ -1,5 +1,6 @@
 package com.woohsi.bookfriend.controller;
 
+import com.woohsi.bookfriend.po.Admin;
 import com.woohsi.bookfriend.po.Book;
 import com.woohsi.bookfriend.po.BookForm;
 import com.woohsi.bookfriend.po.User;
@@ -43,6 +44,22 @@ public class IndexController {
     @RequestMapping("/index")
     public String index(Model model) {
         return "forward:/book/list";
+    }
+    @RequestMapping("/toAdminLogin")
+    public String toAdminLogin(Model model, HttpSession session) {
+
+        if (session.getAttribute("admin") != null) {
+            return "redirect:/admin_index";
+        }
+        model.addAttribute("admin", new Admin());
+        return "admin_login";
+    }
+    @RequestMapping("/admin_index")
+    public String adminIndex(Model model, HttpSession session) {
+        if (session.getAttribute("admin") == null) {
+            return "redirect:/toAdminLogin";
+        }
+        return "admin_index";
     }
     @RequestMapping("/test")
     public String test(Model model) {

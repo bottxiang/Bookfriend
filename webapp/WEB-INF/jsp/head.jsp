@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand " href="/index">Bookfriend</a>
+                <a class="navbar-brand " href="/index">书友网络旧书店</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -26,6 +26,8 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">书籍管理 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/toAddBook">发布书籍</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="/book/list-myall">所有书籍</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="/book/list-mysell">在售书籍</a></li>
                             </ul>
@@ -43,9 +45,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">消息 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/order/list-buy">查看消息</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">---</a></li>
+                                <li><a href="/message/check">新消息通知</a></li>
+                                <li><a href="/message/clear">清除通知</a></li>
                             </ul>
                         </li>
                         <%--个人中心--%>

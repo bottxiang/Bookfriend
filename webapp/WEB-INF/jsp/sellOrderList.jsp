@@ -3,6 +3,7 @@
 <head>
     <title>订单列表-售出</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -23,7 +24,7 @@
                 <td>${order.oid}</td>
                 <td>${order.bkname}</td>
                 <td>${order.bkprice}</td>
-                <td>${order.email}</td>
+                <td><a href="/message/chat?toUser=${order.uid}"><i class="fas fa-sms" style="color: #168539; margin-top: 10px; margin-left: 10px;">联系卖家</i></a></td>
                 <td><a href="/order/cancel?oid=${order.oid}&bkid=${order.bkid}&who=seller"><button type="submit" class="btn btn-danger">取消订单</button></a></td>
             </tr>
         </c:forEach>

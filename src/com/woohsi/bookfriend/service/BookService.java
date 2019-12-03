@@ -17,4 +17,10 @@ public interface BookService {
     public String listMySell(Model model, HttpSession session);
 
     public String searchBook(Model model, String keyword);
+
+    public String listMyAll(Model model, HttpSession session);
+
+    public String check(Model model);
+
+    public String setOnSell(Integer bkid);
 }

@@ -14,7 +14,7 @@
 <form action="/order/save" method="post">
     <div class="big-book-item">
         <div class="book-img"  >
-            <img src="/images/book_1.jpg">
+            <img src="/images/default_book.png">
         </div>
         <div class="book-detail">
             <div>书名：${book.bkname}</div>

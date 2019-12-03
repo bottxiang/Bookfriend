@@ -12,7 +12,8 @@ public class Book {
     private String bkdescription;//书籍描述
     private Integer status;//书籍售卖状态 1:已售出 0:未售出
     private Integer uid;//卖家id
-    private String bkimg;
+    private String bkimg;//书籍图片地址
+    private Integer onsell;//书籍上架状态 1:已上架 0:待审核
 
     public Integer getBkid() {
         return bkid;
@@ -78,6 +79,14 @@ public class Book {
         this.bkimg = bkimg;
     }
 
+    public Integer getOnsell() {
+        return onsell;
+    }
+
+    public void setOnsell(Integer onsell) {
+        this.onsell = onsell;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -89,6 +98,7 @@ public class Book {
                 ", status=" + status +
                 ", uid=" + uid +
                 ", bkimg='" + bkimg + '\'' +
+                ", onsell=" + onsell +
                 '}';
     }
 }

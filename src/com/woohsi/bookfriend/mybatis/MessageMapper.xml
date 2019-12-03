@@ -13,6 +13,6 @@
     </select>
 
     <delete id="deleteMessageByUid" parameterType="Integer">
-        delete from message where `from`=#{uid}
+        delete from message where `from`=#{arg0} and `to`=#{arg1}
     </delete>
 </mapper>

@@ -20,9 +20,11 @@
         <input type="text" class="form-control" id="bkpress" name="bkpress">
         <label for="bkdescription">描述：</label>
         <input type="text" class="form-control" id="bkdescription" name="bkdescription">
-        <label for="status">售卖状态：</label>
-        <input type="radio" id="status" name="status" value="0" checked>未售出
-        <input type="radio" id="status" name="status" value="1">已售出
+<%--        <label for="status">售卖状态：</label>--%>
+<%--        <input type="radio" id="status" name="status" value="0" checked>未售出--%>
+<%--        <input type="radio" id="status" name="status" value="1">已售出--%>
+        <input type="hidden" id="status" name="status" value="0">
+        <input type="hidden" id="onsell" name="onsell" value="0">
         <input type="hidden" class="form-control" name="uid" value="<%=MyUtil.getUserId(session)%>">
         <br>
         <label for="bkimg">书籍图片：</label>

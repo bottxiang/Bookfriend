@@ -9,7 +9,7 @@
 <%@include file="head.jsp"%>
     <div class="container">
         <form action="/user/resetPwd"class="form-horizontal" style="margin-top: 200px;">
-            <h2 class="col-xs-offset-3">重设密码</h2>
+            <h2 class="col-xs-offset-3" style="max-width:200px; margin: 30px auto ;">重设密码</h2>
             <div class="form-group">
                 <label for="pwd" class="col-xs-2 col-xs-offset-3 control-label">新密码</label>
                 <div class="col-xs-4">

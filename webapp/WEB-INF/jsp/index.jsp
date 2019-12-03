@@ -14,21 +14,24 @@
             <div class="book-item">
                 <a href="/book/query?bkid=${book.bkid}">
                     <div class="book-img"  >
-                        <img src="/images/${book.bkimg!=null?book.bkimg:"book_1.jpg"}">
+                        <img src="/images/${book.bkimg!=null?book.bkimg:"default_book.png"}">
                     </div>
                     <div class="book-detail">
                         <div>书名：${book.bkname}</div>
                         <div>价格：${book.bkprice}</div>
+                        <div>卖家ID：${book.uid}</div>
                         <p>描述：${book.bkdescription}</p>
+
                     </div>
                 </a>
             </div>
         </c:forEach>
-    index
     </div>
+    <hr>
 
 <footer class="footer">
     <div class="container">
+        <a href="/toAdminLogin">后台管理</a>
         <p>&copy; 2019 woohsi</p>
     </div>
 </footer>

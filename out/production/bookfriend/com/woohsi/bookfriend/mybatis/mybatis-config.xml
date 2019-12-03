@@ -8,6 +8,8 @@
         <typeAlias type="com.woohsi.bookfriend.po.Book" alias="Book" />
         <typeAlias type="com.woohsi.bookfriend.po.Order" alias="Order" />
         <typeAlias type="com.woohsi.bookfriend.po.Message" alias="Message" />
+        <typeAlias type="com.woohsi.bookfriend.po.Notify" alias="Notify" />
+        <typeAlias type="com.woohsi.bookfriend.po.Admin" alias="Admin" />
     </typeAliases>
     <mappers>
 <!--        映射器告诉MyBatis到哪里去找映射文件-->
@@ -15,5 +17,7 @@
         <mapper resource="com/woohsi/bookfriend/mybatis/BookMapper.xml"/>
         <mapper resource="com/woohsi/bookfriend/mybatis/OrderMapper.xml"/>
         <mapper resource="com/woohsi/bookfriend/mybatis/MessageMapper.xml"/>
+        <mapper resource="com/woohsi/bookfriend/mybatis/NotifyMapper.xml"/>
+        <mapper resource="com/woohsi/bookfriend/mybatis/AdminMapper.xml"/>
     </mappers>
 </configuration>

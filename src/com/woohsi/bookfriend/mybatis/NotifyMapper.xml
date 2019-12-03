@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.woohsi.bookfriend.dao.NotifyDao">
+
+    <insert id="saveNotify" parameterType="Notify">
+        insert into notify(nid, `from`, `to`)
+        values(null, #{from}, #{to})
+    </insert>
+
+    <select id="selectNotifyByUid" parameterType="Integer" resultType="Notify">
+        select * from notify where `to`=#{uid}
+    </select>
+
+    <delete id="deleteNotify" parameterType="Integer">
+        delete from notify where `from`=#{from} and `to`=#{to}
+    </delete>
+    <delete id="clearNotify" parameterType="Integer">
+        delete from notify where `to`=#{uid}
+    </delete>
+</mapper>

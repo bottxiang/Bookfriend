@@ -15,7 +15,13 @@ public interface BookDao {
     public int updateBook(Book book);
     public int deleteBook(Integer bkid);
     List<Book> selectAllBooks();
-    List<Book> selectBookByUid(Integer uid);
+    List<Book> selectOnSellBookByUid(Integer uid);
 
     List<Book> selectBookByKeyword(String keyword);
+
+    List<Book> selectAllBookByUid(Integer userId);
+
+    List<Book> selectBookForCheck();
+
+    int setOnSell(Integer bkid);
 }

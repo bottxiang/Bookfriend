@@ -27,6 +27,8 @@ public class BookServiceImpl implements BookService{
         String filename = multipartFile.getOriginalFilename();
         String newFilename = UUID.randomUUID() + filename.substring(filename.lastIndexOf("."));
         File imgFile = new File(request.getServletContext().getRealPath("/images"), newFilename);
+        System.out.println(request.getServletContext().getRealPath("/images"));
+        //File imgFile = new File("/home/xb/IdeaProjects/bookfriend/webapp/images", newFilename);
         try {
             multipartFile.transferTo(imgFile);
         } catch (IOException e) {
@@ -41,6 +43,7 @@ public class BookServiceImpl implements BookService{
         book.setStatus(bookForm.getStatus());
         book.setUid(bookForm.getUid());
         book.setBkimg(newFilename);
+        book.setOnsell(bookForm.getOnsell());
         System.out.println(book);
         if (bookDao.saveBook(book) > 0) {
             return "redirect:/book/list";
@@ -80,7 +83,7 @@ public class BookServiceImpl implements BookService{
 
     @Override
     public String listMySell(Model model, HttpSession session) {
-        List<Book> books = bookDao.selectBookByUid(MyUtil.getUserId(session));
+        List<Book> books = bookDao.selectOnSellBookByUid(MyUtil.getUserId(session));
         model.addAttribute("books", books);
         return "mySellBookList";
     }
@@ -90,5 +93,28 @@ public class BookServiceImpl implements BookService{
         List<Book> books = bookDao.selectBookByKeyword(keyword);
         model.addAttribute("books", books);
         return "index";
+    }
+
+    @Override
+    public String listMyAll(Model model, HttpSession session) {
+        List<Book> books = bookDao.selectAllBookByUid(MyUtil.getUserId(session));
+        model.addAttribute("books", books);
+        return "myAllBookList";
+    }
+
+    @Override
+    public String check(Model model) {
+        List<Book> books = bookDao.selectBookForCheck();
+        model.addAttribute("books", books);
+        return "waitCheck";
+
+    }
+
+    @Override
+    public String setOnSell(Integer bkid) {
+        if (bookDao.setOnSell(bkid) > 0) {
+            return "redirect:/book/check";
+        }
+        return null;
     }
 }

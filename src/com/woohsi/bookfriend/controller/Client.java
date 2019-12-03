@@ -3,10 +3,9 @@ package com.woohsi.bookfriend.controller;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.woohsi.bookfriend.po.Message;
+import com.woohsi.bookfriend.po.Notify;
 import com.woohsi.bookfriend.service.MessageService;
-import com.woohsi.bookfriend.service.MessageServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import com.woohsi.bookfriend.service.NotifyService;
 import org.springframework.web.context.ContextLoader;
 
 import javax.websocket.*;
@@ -17,6 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @ServerEndpoint("/chat/{sendUser}")
 public class Client {
     private MessageService messageService = (MessageService)ContextLoader.getCurrentWebApplicationContext().getBean("messageService");
+    private NotifyService notifyService = (NotifyService)ContextLoader.getCurrentWebApplicationContext().getBean("notifyService");
     // 用户在线数
     private static int onlineCount = 0;
     // 当前的websocket对象
@@ -27,6 +27,7 @@ public class Client {
     private Integer sendUser;// 当前用户
     private Integer toUser;// 接收人
     private String message;// 聊天信息
+    private Boolean isFirst;// 是否第一条消息
 
     /**
      * 连接成功
@@ -35,6 +36,7 @@ public class Client {
     public void onOpen(@PathParam("sendUser") Integer sendUser, Session session) throws IOException {
         this.sendUser = sendUser;
         this.session = session;
+        this.isFirst = true;
         addOnlineCount();
         System.out.println(sendUser + "加入, 当前在线人数为" + getOnlineCount() + " 当前session是" + session.hashCode());
         webSocketMap.put(sendUser, this);//当前用户的websocket
@@ -58,18 +60,10 @@ public class Client {
     public void onMessage(String jsonMsg, Session session) throws IOException {
         System.out.println(jsonMsg);
         JSONObject jsonObject = JSON.parseObject(jsonMsg);
-        //JSONObject jsonOject = JSONObject.fromObject(jsonMsg);
         sendUser = Integer.parseInt(jsonObject.getString("sendUser"));
         toUser = Integer.parseInt(jsonObject.getString("toUser"));
         message = jsonObject.getString("message");
-
-        message = sendUser + ":" + message;
-        // 得到接收人
-        Client user = webSocketMap.get(toUser);
-        if (user != null) {
-            user.sendMessage(message);
-        }
-        this.sendMessage(message);
+        message = message.substring(0, message.length()-1);
         //持久化
         Message msg = new Message();
         msg.setFrom(sendUser);
@@ -78,6 +72,24 @@ public class Client {
         System.out.println("msg:" + msg);
         messageService.saveMessage(msg);
         System.out.println("信息已保存到数据库");
+
+        message = sendUser + ":" + message;
+        // 得到接收人
+        Client user = webSocketMap.get(toUser);
+        if (user != null) {
+            //接收人在线
+            user.sendMessage(message);
+        }
+        // 通知接收人有新消息
+        if (isFirst) {
+            Notify notify = new Notify();
+            notify.setFrom(sendUser);
+            notify.setTo(toUser);
+            notifyService.saveNotify(notify);
+            isFirst = false;
+        }
+        this.sendMessage(message);
+
     }
     /**
      * 发成错误所调用的方法

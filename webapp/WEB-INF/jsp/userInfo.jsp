@@ -28,7 +28,7 @@
         <div class="detail">
             <p>id：${user.uid}</p>
             <p>邮箱：${user.email}</p>
-            <p>注册时间：2019.1.1</p>
+            <p>注册时间：2019.12.2</p>
             <button type="button" class="btn btn-default btn-sm pull-right" data-toggle="modal"
                     data-target="#delete-account">注销账号
             </button>

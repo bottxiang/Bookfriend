@@ -64,4 +64,17 @@ public class BookController {
     public String updateBook(Book book) {
         return bookService.updateBook(book);
     }
+    @RequestMapping("/list-myall")
+    public String listMyAll(Model model, HttpSession session) {
+        return bookService.listMyAll(model, session);
+    }
+    @RequestMapping("/check")
+    public String check(Model model) {
+        return bookService.check(model);
+    }
+
+    @RequestMapping("/setOnSell")
+    public String setOnSell(Integer bkid) {
+        return bookService.setOnSell(bkid);
+    }
 }

@@ -5,8 +5,8 @@
 <mapper namespace="com.woohsi.bookfriend.dao.BookDao">
 
     <insert id="saveBook" parameterType="Book">
-        insert into book(bkid,bkname,bkprice,bkpress,bkdescription,status,uid,bkimg)
-        values(null, #{bkname}, #{bkprice}, #{bkpress}, #{bkdescription}, #{status}, #{uid}, #{bkimg})
+        insert into book(bkid,bkname,bkprice,bkpress,bkdescription,status,uid,bkimg,onsell)
+        values(null, #{bkname}, #{bkprice}, #{bkpress}, #{bkdescription}, #{status}, #{uid}, #{bkimg}, #{onsell})
     </insert>
     <select id="queryBook" parameterType="Integer" resultType="Book">
         select * from book where bkid=#{bkid}
@@ -19,20 +19,32 @@
             bkdescription=#{bkdescription},
             status=#{status},
             uid=#{uid},
-            bkimg=#{bkimg}
+            bkimg=#{bkimg},
+            onsell=#{onsell}
         where bkid=#{bkid}
     </update>
     <select id="selectAllBooks" resultType="Book">
-        select * from book
+        select * from book where onsell=1
     </select>
-    <select id="selectBookByUid" parameterType="Integer" resultType="Book">
-        select * from book where uid=#{uid}
+    <select id="selectOnSellBookByUid" parameterType="Integer" resultType="Book">
+        select * from book where uid=#{uid} and onsell=1
     </select>
 
     <select id="selectBookByKeyword" parameterType="String" resultType="Book">
-        select * from book where bkname like concat('%', #{keyword}, '%');
+        select * from book where onsell=1 and bkname like concat('%', #{keyword}, '%');
     </select>
     <delete id="deleteBook" parameterType="Integer">
         delete from book where bkid=#{bkid}
     </delete>
+    <select id="selectAllBookByUid" parameterType="Integer" resultType="Book">
+        select * from book where uid=#{uid}
+    </select>
+    <select id="selectBookForCheck" resultType="Book">
+        select * from book where onsell=0
+    </select>
+    <update id="setOnSell" parameterType="Integer">
+        update book set
+        onsell=1
+        where bkid=#{bkid}
+    </update>
 </mapper>
